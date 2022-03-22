@@ -1,0 +1,11 @@
+D:\Документы\Coding\repos\WinForms\WinFormsLab2\WinFormCourseEx5\WinFormCourseEx5\bin\Debug\WinFormCourseEx5.exe.config
+D:\Документы\Coding\repos\WinForms\WinFormsLab2\WinFormCourseEx5\WinFormCourseEx5\bin\Debug\WinFormCourseEx5.exe
+D:\Документы\Coding\repos\WinForms\WinFormsLab2\WinFormCourseEx5\WinFormCourseEx5\bin\Debug\WinFormCourseEx5.pdb
+D:\Документы\Coding\repos\WinForms\WinFormsLab2\WinFormCourseEx5\WinFormCourseEx5\obj\Debug\Wincontainer.csproj.AssemblyReference.cache
+D:\Документы\Coding\repos\WinForms\WinFormsLab2\WinFormCourseEx5\WinFormCourseEx5\obj\Debug\Wincontainer.csproj.SuggestedBindingRedirects.cache
+D:\Документы\Coding\repos\WinForms\WinFormsLab2\WinFormCourseEx5\WinFormCourseEx5\obj\Debug\WinFormCourseEx5.Form1.resources
+D:\Документы\Coding\repos\WinForms\WinFormsLab2\WinFormCourseEx5\WinFormCourseEx5\obj\Debug\WinFormCourseEx5.Properties.Resources.resources
+D:\Документы\Coding\repos\WinForms\WinFormsLab2\WinFormCourseEx5\WinFormCourseEx5\obj\Debug\Wincontainer.csproj.GenerateResource.cache
+D:\Документы\Coding\repos\WinForms\WinFormsLab2\WinFormCourseEx5\WinFormCourseEx5\obj\Debug\Wincontainer.csproj.CoreCompileInputs.cache
+D:\Документы\Coding\repos\WinForms\WinFormsLab2\WinFormCourseEx5\WinFormCourseEx5\obj\Debug\WinFormCourseEx5.exe
+D:\Документы\Coding\repos\WinForms\WinFormsLab2\WinFormCourseEx5\WinFormCourseEx5\obj\Debug\WinFormCourseEx5.pdb

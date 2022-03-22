@@ -1,0 +1,11 @@
+D:\Документы\Coding\repos\WinForms\WinFormCourseEx2.1\WinFormCourseEx2.1\bin\Debug\WinFormCourseEx2.1.exe.config
+D:\Документы\Coding\repos\WinForms\WinFormCourseEx2.1\WinFormCourseEx2.1\bin\Debug\WinFormCourseEx2.1.exe
+D:\Документы\Coding\repos\WinForms\WinFormCourseEx2.1\WinFormCourseEx2.1\bin\Debug\WinFormCourseEx2.1.pdb
+D:\Документы\Coding\repos\WinForms\WinFormCourseEx2.1\WinFormCourseEx2.1\obj\Debug\WinQuestion.csproj.AssemblyReference.cache
+D:\Документы\Coding\repos\WinForms\WinFormCourseEx2.1\WinFormCourseEx2.1\obj\Debug\WinQuestion.csproj.SuggestedBindingRedirects.cache
+D:\Документы\Coding\repos\WinForms\WinFormCourseEx2.1\WinFormCourseEx2.1\obj\Debug\WinFormCourseEx2._1.Properties.Resources.resources
+D:\Документы\Coding\repos\WinForms\WinFormCourseEx2.1\WinFormCourseEx2.1\obj\Debug\WinQuestion.csproj.GenerateResource.cache
+D:\Документы\Coding\repos\WinForms\WinFormCourseEx2.1\WinFormCourseEx2.1\obj\Debug\WinQuestion.csproj.CoreCompileInputs.cache
+D:\Документы\Coding\repos\WinForms\WinFormCourseEx2.1\WinFormCourseEx2.1\obj\Debug\WinFormCourseEx2.1.exe
+D:\Документы\Coding\repos\WinForms\WinFormCourseEx2.1\WinFormCourseEx2.1\obj\Debug\WinFormCourseEx2.1.pdb
+D:\Документы\Coding\repos\WinForms\WinFormCourseEx2.1\WinFormCourseEx2.1\obj\Debug\WinFormCourseEx2._1.WQ.resources

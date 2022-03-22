@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "d00a2ccb-5a8c-4f17-ab88-8b43c5c5b382": {
+      "ProjectGuid": "d00a2ccb-5a8c-4f17-ab88-8b43c5c5b382",
+      "DisplayName": "LibrWorm",
+      "ColorIndex": 0
+    },
+    "5d6c8e56-a414-4239-9907-cc3e2a3f87c6": {
+      "ProjectGuid": "5d6c8e56-a414-4239-9907-cc3e2a3f87c6",
+      "DisplayName": "RegistrationForm",
+      "ColorIndex": 1
+    },
+    "3aef9811-b66a-4bfe-b81a-71359f8fe5fc": {
+      "ProjectGuid": "3aef9811-b66a-4bfe-b81a-71359f8fe5fc",
+      "DisplayName": "WinFormCourseEx8",
+      "ColorIndex": 2
+    },
+    "773ac9fb-095d-482d-be4f-beda7a50e845": {
+      "ProjectGuid": "773ac9fb-095d-482d-be4f-beda7a50e845",
+      "DisplayName": "WinTimer1",
+      "ColorIndex": 3
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 4
+}
