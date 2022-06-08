@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "The_pie_is_a_lie", "The_pie_is_a_lie.pyproj", "{3BD8084A-CDFE-4676-A08B-C5388DAC0572}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3BD8084A-CDFE-4676-A08B-C5388DAC0572}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BD8084A-CDFE-4676-A08B-C5388DAC0572}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {578BF5C6-1C29-4057-B5F5-0979B329689F}
+	EndGlobalSection
+EndGlobal
