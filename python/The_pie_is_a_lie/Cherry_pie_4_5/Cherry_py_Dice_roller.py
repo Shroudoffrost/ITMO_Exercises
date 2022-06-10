@@ -20,12 +20,12 @@ else:
         +'Roll the dice, '+player_1)
 time.sleep(5)
 
-total_for_player_1 = roll_round.roll_round(dice, this_many)
+total_for_player_1 = roll_round.roll(dice, this_many)
 print(player_1+', you get '+str(total_for_player_1))
 time.sleep(3)
 
 print('Now it is '+player_2+'\'s turn to roll!\n START!')
-total_for_player_2 = roll_round.roll_round(dice, this_many)
+total_for_player_2 = roll_round.roll(dice, this_many)
 print(player_2+', you get '+str(total_for_player_2))
 
 time.sleep(2)
