@@ -1,11 +1,8 @@
 from random import randint as dice
-import roll_round
-import time
+import roll_round, time
 
 player_1 = input('Player One, introduce yourself: ')
 player_2 = input('Player Two, introduce yourself: ')
-total_for_player_1 = 0
-total_for_player_2 = 0
 
 print('GREATER DICE will choose how many times you are to roll\n')
 time.sleep(5)
@@ -26,13 +23,15 @@ time.sleep(5)
 total_for_player_1 = roll_round.roll_round(dice, this_many)
 print(player_1,', you get '+str(total_for_player_1))
 time.sleep(3)
+
 print('Now it is '+player_2+'\'s turn to roll!\n START!')
 total_for_player_2 = roll_round.roll_round(dice, this_many)
 print(player_2,', you get '+str(total_for_player_2))
 
-time.sleep(5)
+time.sleep(2)
 print('We are done. Now let\'s see who won')
-time.sleep(5)
+time.sleep(2)
+
 if total_for_player_1 > total_for_player_2:
     print(player_1+' is the winner!')
 elif total_for_player_1 < total_for_player_2:
