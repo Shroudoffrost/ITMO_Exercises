@@ -98,15 +98,15 @@ int recursive_sum(int start_num)
 int decimal_to_binary(int n, long binary)
 {
     int p = 0;
-    while(n - pow(2,p) > pow(2,p))
+    while(n - pow(2,p) >= pow(2,p))
     {
         p++;
     }
     binary = binary + pow(10,p);
     int remainder = n - pow(2,p);
-    if(remainder > 1)
+    if(remainder > 0)
         decimal_to_binary(remainder, binary);
-    else return binary+1;
+    else return binary;
 }
 
 int decimal_to_binary(int n)

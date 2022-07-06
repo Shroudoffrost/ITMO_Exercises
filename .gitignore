@@ -1,0 +1,9 @@
+**/.vs
+**/x64
+**/bin
+**/obj
+**/debug
+**/*.docx
+**/*.pdf
+python/Python_labs_The_pie_is_a_lie/Lab_3_Cherry_pie_3/Assets/Numbers_wav/
+**/__pycache

@@ -7,8 +7,8 @@
 //#define LIMITED_RECURSION
 //#define DECOMPOSE_GAUSS
 //#define DECOMPOSE
-//#define CUBIC
-//#define RECURSIVE_SUM
+#define CUBIC
+#define RECURSIVE_SUM
 //#define DEC_TO_BIN
 
 using namespace std;
