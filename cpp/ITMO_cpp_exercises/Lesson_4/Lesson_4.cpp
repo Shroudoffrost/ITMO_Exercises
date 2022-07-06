@@ -1,6 +1,6 @@
 #include <iostream>
 #include "Lesson_4_fun_pack.h"
-//#define QUADRATIK
+#define QUADRATIK
 #define INPUT
 using namespace std;
 
@@ -39,4 +39,3 @@ int main()
 
 #endif
 }
-
