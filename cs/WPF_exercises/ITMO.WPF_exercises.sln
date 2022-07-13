@@ -21,15 +21,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Baackground_worker_exercise
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Using_win_forms", "Using_win_forms\Using_win_forms.csproj", "{EB7F7D99-92B3-48C4-9144-14B0047E82CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfUserControl", "WpfUserControl\WpfUserControl.csproj", "{CB978209-D2EC-40C8-A6E1-12D55EB3387B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfUserControl", "WpfUserControl\WpfUserControl.csproj", "{CB978209-D2EC-40C8-A6E1-12D55EB3387B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApplicationPolygon", "WpfApplicationPolygon\WpfApplicationPolygon.csproj", "{08E2F940-39A3-4AC4-B8AB-20BA1173DB5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfApplicationPolygon", "WpfApplicationPolygon\WpfApplicationPolygon.csproj", "{08E2F940-39A3-4AC4-B8AB-20BA1173DB5F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ink_pad", "Ink_pad\Ink_pad.csproj", "{09966792-02F2-4EC0-9F82-64B7B5E01A8F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ink_pad", "Ink_pad\Ink_pad.csproj", "{09966792-02F2-4EC0-9F82-64B7B5E01A8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Style01", "Style01\Style01.csproj", "{1428B367-75AD-4812-90BE-BB658F330EF8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Style01", "Style01\Style01.csproj", "{1428B367-75AD-4812-90BE-BB658F330EF8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBindingDemo", "DataBindingDemo\DataBindingDemo.csproj", "{70957BFB-D9DC-4950-8F2E-1236AF299798}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataBindingDemo", "DataBindingDemo\DataBindingDemo.csproj", "{70957BFB-D9DC-4950-8F2E-1236AF299798}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Param-pam-pam", "Param-pam-pam\Param-pam-pam.csproj", "{49616485-C856-4FEC-A10E-97ED2E1F1B27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpenseIt", "ExpenseIt\ExpenseIt.csproj", "{EABFCDFF-C169-4157-BBB3-C48063700A90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +97,14 @@ Global
 		{70957BFB-D9DC-4950-8F2E-1236AF299798}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70957BFB-D9DC-4950-8F2E-1236AF299798}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70957BFB-D9DC-4950-8F2E-1236AF299798}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49616485-C856-4FEC-A10E-97ED2E1F1B27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49616485-C856-4FEC-A10E-97ED2E1F1B27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49616485-C856-4FEC-A10E-97ED2E1F1B27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49616485-C856-4FEC-A10E-97ED2E1F1B27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EABFCDFF-C169-4157-BBB3-C48063700A90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EABFCDFF-C169-4157-BBB3-C48063700A90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EABFCDFF-C169-4157-BBB3-C48063700A90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EABFCDFF-C169-4157-BBB3-C48063700A90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

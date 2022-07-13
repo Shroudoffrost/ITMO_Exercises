@@ -15,7 +15,7 @@ namespace DataBindingDemo
             Brush b = null;
 
             if (value != null &&
-            value.GetType() == typeof(bool))
+                value.GetType() == typeof(bool))
             {
                 b = (bool)value ? Brushes.Green : Brushes.Red;
             }
