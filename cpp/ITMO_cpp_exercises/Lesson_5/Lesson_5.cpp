@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 #include "Lesson_5_fun_pack.h"
 //#define ARRAY_TINKER_1
 #define ARRAY_TINKER_2
@@ -49,5 +50,17 @@ int main()
     }
     delete []c;
 
+    ofstream fout("5-2 arrays.txt", ios::binary);
+    fout << "First array: ";
+    for (int i = 0; i < sizeof(a)/sizeof(int); i++)
+    {
+        fout << a[i] << " ";
+    }
+    fout << "\nSecond array: ";
+    for (int i = 0; i < sizeof(b)/sizeof(int); i++)
+    {
+        fout << b[i] << " ";
+    }
+    fout.close();
 #endif
 }

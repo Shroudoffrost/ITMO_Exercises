@@ -28,8 +28,8 @@ int main()
 
 #ifdef INPUT
 
-    int a, b;
-    if(!Input(a,b))
+    int aa, bb;
+    if(!Input(aa,bb))
     { 
         cerr << "error";
         return 1;
