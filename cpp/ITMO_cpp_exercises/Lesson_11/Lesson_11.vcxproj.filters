@@ -15,18 +15,18 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Lesson_10.cpp">
+    <ClCompile Include="Lesson_11.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Triangle.cpp">
+    <ClCompile Include="Distance.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Dot.cpp">
+    <ClCompile Include="Point.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Dot.h">
+    <ClInclude Include="Distance.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

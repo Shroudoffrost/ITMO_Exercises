@@ -60,9 +60,11 @@ class Triangle
             double p = TrianglePerimeter()/ 2;
             return sqrt(p * (p - ab) * (p - bc) * (p - ac));
         }
-        class ExNotTriangle {
-        public:
-            string nameObject;
-            ExNotTriangle(string nameObj) :nameObject(nameObj) {}
+
+        class ExNotTriangle
+        {
+            public:
+                string nameObject;
+                ExNotTriangle(string nameObj) :nameObject(nameObj) {}
         };
 };
