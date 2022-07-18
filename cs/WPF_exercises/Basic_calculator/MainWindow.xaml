@@ -1,0 +1,306 @@
+﻿<Window x:Name="Calculator" x:Class="Basic_calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Basic_calculator"
+        mc:Ignorable="d" Height="586" Width="578" Background="#FF1B1A1A" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="ThreeDBorderWindow" BorderThickness="5,5,7,4">
+    <Window.BorderBrush>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black"/>
+            <GradientStop Color="#FF1F1818" Offset="0.336"/>
+        </LinearGradientBrush>
+    </Window.BorderBrush>
+    <Window.DataContext>
+        <local:ALU/>
+    </Window.DataContext>
+
+    <Grid Margin="0,0,0,0">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width = "15"/>
+            <ColumnDefinition Width = "*"/>
+            <ColumnDefinition Width = "15"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="13"/>
+            <RowDefinition Name="Display_segment" Height="200"/>
+            <RowDefinition Height="13"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="13"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+
+        <TextBox Name="main_display"
+                 Text="{Binding operator_, UpdateSourceTrigger=PropertyChanged}"
+                 TextWrapping="Wrap"
+                 Margin="55,27,53,85"
+                 Background="#FF2F6335"
+                 TextAlignment="Right"
+                 BorderBrush="#FF414246" BorderThickness="2,2,2,2"
+                 FontSize="55" FontFamily="Microsoft YaHei UI Light"
+                 FontStyle="Normal" FontStretch="ExtraCondensed"
+                 MaxLines="1"
+                 IsTabStop="False" IsUndoEnabled="False" IsReadOnly="True"
+                 IsManipulationEnabled="True"
+                 VerticalContentAlignment="Bottom"
+                 FontWeight="ExtraLight"
+                 Focusable="False" Grid.Column="1" Grid.Row="1" SourceUpdated="main_display_SourceUpdated"
+                 />
+        <TextBox Name="small_display"
+                 Grid.Column="1" Grid.Row="1" Margin="350,27,63,154"
+                 Background="#FF2F6335" Text="123456"
+                 HorizontalContentAlignment="Right"
+                 BorderBrush="#FF414246" BorderThickness="0,2,0,0"
+                 IsTabStop="False" IsUndoEnabled="False" IsReadOnly="True"/>
+
+        <!-- Num pad column 1 -->
+        <Button Name="btn_7"
+                Grid.Row="3" Grid.Column="1"
+                Content="7" Width="55" Height="55"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Margin="85,20,0,0"
+                Foreground="#FF929292" Background="#FF353131"
+                FontSize="36" FontWeight="Bold"
+                BorderBrush="#FF070708" BorderThickness="1,2,5,6" Click="btn_7_Click"
+                />
+
+        <Button Name="btn_4"
+                Grid.Row="3" Grid.Column="1"
+                Content="4" Width="55" Height="55"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Margin="85,86,0,0"
+                Foreground="#FF929292" Background="#FF353131"
+                FontSize="36" FontWeight="Bold"
+                BorderBrush="#FF070708" BorderThickness="2,2,5,6" Click="btn_4_Click"/>
+
+        <Button Name="btn_1"
+                Grid.Row="3" Grid.Column="1"
+                Content="1" Width="55" Height="55"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Margin="85,152,0,0"
+                Foreground="#FF929292" Background="#FF353131"
+                FontSize="36" FontWeight="Bold"
+                BorderBrush="#FF070708" BorderThickness="2,4,4,5" Click="btn_1_Click"/>
+
+        <Button Name="btn_0"
+                Grid.Row="3" Grid.Column="1"
+                Content="0" Width="55" Height="55"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Margin="85,218,0,0"
+                Foreground="#FF929292" Background="#FF353131"
+                FontSize="36" FontWeight="Bold"
+                BorderBrush="#FF070708" BorderThickness="2,3,4,3" Click="btn_0_Click"/>
+
+        <!-- Num pad column 2 -->
+        <Button Name="btn_8"
+                Grid.Row="3" Grid.Column="1"
+                Content="8" Width="55" Height="55"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Margin="151,20,0,0"
+                Foreground="#FF929292" Background="#FF353131"
+                FontSize="36" FontWeight="Bold"
+                BorderBrush="#FF070708" BorderThickness="2,3,4,6" Click="btn_8_Click"/>
+
+        <Button Name="btn_5"
+                Grid.Row="3" Grid.Column="1"
+                Content="5" Width="55" Height="55"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Margin="151,86,0,0"
+                Foreground="#FF929292" Background="#FF353131"
+                FontSize="36" FontWeight="Bold"
+                BorderBrush="#FF070708" BorderThickness="2,2,3,6" Click="btn_5_Click"/>
+
+        <Button Name="btn_2"
+                Grid.Row="3" Grid.Column="1"
+                Content="2" Width="55" Height="55"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Margin="151,152,0,0"
+                Foreground="#FF929292" Background="#FF353131"
+                FontSize="36" FontWeight="Bold"
+                BorderBrush="#FF070708" BorderThickness="2,5,3,3" Click="btn_2_Click"/>
+
+        <Button Name="btn_00"
+                Grid.Row="3" Grid.Column="1"
+                Content="00" Width="55" Height="55"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Margin="151,218,0,0"
+                Foreground="#FF929292" Background="#FF353131"
+                FontSize="36" FontWeight="Bold"
+                BorderBrush="#FF070708" BorderThickness="2,5,3,2" Click="btn_00_Click"/>
+
+        <!-- Num pad column 3 -->
+        <Button Name="btn_9"
+                Grid.Row="3" Grid.Column="1"
+                Content="9" Width="55" Height="55"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Margin="219,20,0,0"
+                Foreground="#FF929292" Background="#FF353131"
+                FontSize="36" FontWeight="Bold"
+                BorderBrush="#FF070708" BorderThickness="4,2,2,5" Click="btn_9_Click"/>
+
+        <Button Name="btn_6"
+                Grid.Row="3" Grid.Column="1"
+                Content="6" Width="55" Height="55"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Margin="219,86,0,0"
+                Foreground="#FF929292" Background="#FF353131"
+                FontSize="36" FontWeight="Bold"
+                BorderBrush="#FF070708" BorderThickness="3,2,1,5" Click="btn_6_Click"/>
+
+        <Button Name="btn_3"
+                Grid.Row="3" Grid.Column="1"
+                Content="3" Width="55" Height="55"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Margin="219,152,0,0"
+                Foreground="#FF929292" Background="#FF353131"
+                FontSize="36" FontWeight="Bold"
+                BorderBrush="#FF070708" BorderThickness="3,4,2,3" Click="btn_3_Click"/>
+
+        <Button Name="btn_pnt"
+                Grid.Row="3" Grid.Column="1"
+                Content="." Width="55" Height="55"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Margin="219,218,0,0"
+                Foreground="#FF929292" Background="#FF353131"
+                VerticalContentAlignment="Top"
+                FontSize="36" FontWeight="Bold"
+                BorderBrush="#FF070708" BorderThickness="2,5,1,2" Click="btn_pnt_Click"/>
+
+        <!-- Fun pad Column 1 -->
+        <Button Name="btn_div"
+                Grid.Row="3" Grid.Column="1"
+                Content="÷" Width="55" Height="55"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                VerticalContentAlignment="Top"
+                HorizontalContentAlignment="Center"
+                Margin="294,20,0,0"
+                Foreground="#FF929292" Background="#FF353131"
+                FontSize="36" FontWeight="Bold"
+                BorderBrush="#FF070708" BorderThickness="3,2,1,4" Click="btn_div_Click"/>
+
+        <Button Name="btn_mul"
+                Grid.Row="3" Grid.Column="1"
+                Content="×" Width="55" Height="55"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                VerticalContentAlignment="Top"
+                HorizontalContentAlignment="Center"
+                Margin="294,86,0,0"
+                Foreground="#FF929292" Background="#FF353131"
+                FontSize="36" FontWeight="Bold"
+                BorderBrush="#FF070708" BorderThickness="3,2,1,5" Click="btn_mul_Click"/>
+
+        <Button Name="btn_plus"
+                Grid.Row="3" Grid.Column="1"
+                Content="+" Width="55" Height="121"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Margin="294,152,0,0"
+                VerticalContentAlignment="Center"
+                HorizontalContentAlignment="Center"
+                Foreground="#FF929292" Background="#FF353131"
+                FontSize="45" FontWeight="Bold"
+                BorderBrush="#FF070708" BorderThickness="4,6,3,2" Click="btn_plus_Click"/>
+
+        <!-- Fun pad column 2 -->
+        <Button Name="btn_sqrt"
+                Grid.Row="3" Grid.Column="1"
+                Content="√" Width="55" Height="55"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Margin="360,20,0,0"
+                Foreground="#FF929292" Background="#FF353131"
+                FontSize="36" FontWeight="Bold"
+                BorderBrush="#FF070708" BorderThickness="4,2,2,5" Click="btn_sqrt_Click"/>
+
+        <Button Name="btn_mod"
+                Grid.Row="3" Grid.Column="1"
+                Content="%" Width="55" Height="55"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Margin="360,86,0,0"
+                Foreground="#FF929292" Background="#FF353131"
+                FontSize="36" FontWeight="Bold"
+                BorderBrush="#FF070708" BorderThickness="3,2,1,5" Click="btn_mod_Click"/>
+
+        <Button Name="btn_minus"
+                Grid.Row="3" Grid.Column="1"
+                Content="-" Width="55" Height="55"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Margin="360,152,0,0"
+                Foreground="#FF929292" Background="#FF353131"
+                FontSize="36" FontWeight="Bold"
+                BorderBrush="#FF070708" BorderThickness="3,4,2,3" Click="btn_minus_Click"/>
+
+        <Button Name="btn_eq"
+                Grid.Row="3" Grid.Column="1"
+                Content="=" Width="55" Height="55"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Margin="360,218,0,0"
+                Foreground="#FF929292" Background="#FF353131"
+                VerticalContentAlignment="Top"
+                FontSize="36" FontWeight="Bold"
+                BorderBrush="#FF070708" BorderThickness="2,5,1,2" Click="btn_eq_Click"/>
+
+        <!-- Fun pad column 3 -->
+        <Button Name="btn_on"
+                Grid.Row="3" Grid.Column="1"
+                Content="ON" Width="55" Height="55"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Margin="426,20,0,0"
+                Foreground="#FF929292" Background="#FF16730E"
+                FontSize="21" FontWeight="Bold"
+                BorderBrush="#FF070708" BorderThickness="4,2,2,5" Click="btn_on_Click"/>
+
+        <Button Name="btn_C"
+                Grid.Row="3" Grid.Column="1"
+                Content="C" Width="55" Height="55"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Margin="426,86,0,0"
+                Foreground="#FF929292" Background="#FF353131"
+                FontSize="27" FontWeight="Bold"
+                BorderBrush="#FF070708" BorderThickness="3,2,1,5" Click="btn_C_Click"/>
+
+        <Button Name="btn_unused_1"
+                Grid.Row="3" Grid.Column="1"
+                Content="nf" Width="55" Height="55"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Margin="426,152,0,0"
+                Foreground="#FF929292" Background="#FF353131"
+                FontSize="21" FontWeight="Bold"
+                BorderBrush="#FF070708" BorderThickness="3,4,2,3"/>
+
+        <Button Name="btn_unused_2"
+                Grid.Row="3" Grid.Column="1"
+                Content="nf" Width="55" Height="55"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Margin="426,218,0,0"
+                Foreground="#FF929292" Background="#FF353131"
+                VerticalContentAlignment="Top"
+                FontSize="21" FontWeight="Bold"
+                BorderBrush="#FF070708" BorderThickness="2,5,1,2"/>
+
+
+    </Grid>
+</Window>
